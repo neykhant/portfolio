@@ -34,6 +34,7 @@ html {
 
 .logo h2 {
   color: #fff;
+  font-weight: 500;
 }
 
 .nav .menu a {
@@ -65,11 +66,11 @@ html {
     position: fixed;
     background: #2c3e50;
     padding: 10px 0;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
   }
 
   .mobile {
-   
+    padding: 8px;
     width: 100%;
     justify-content: space-between;
     max-width: 400px;
@@ -104,13 +105,57 @@ html {
     color: #fff;
     font-size: 15px;
   }
+
+  /*---------------- for section------------------------- */
 }
 
 /* ----------------section main----------- */
 
 .main {
-  /* width: 100%; */
-  min-height: 84vh;
+  width: 100%;
+  min-height: 100vh;
   background-color: #1abc9c;
   display: flex;
+}
+
+.main .container {
+  margin: auto;
+  max-width: 400px;
+  text-align: center;
+  color: #fff;
+}
+
+.main .container img {
+  width: 160px;
+  border-radius: 77px;
+
+  border: 2px solid #fff;
+}
+
+.main .container h1 {
+  font-size: 32px;
+  line-height: 1;
+  margin: 7px 0;
+  font-weight: 300;
+}
+
+.main .container .rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main .container .rating .line {
+  width: 37%;
+  border: 2px solid #fff;
+}
+
+.main .container .rating i {
+  margin: 0 7px;
+}
+
+.container h3 {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 17px 0 0 0;
 }
