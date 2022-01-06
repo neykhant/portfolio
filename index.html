@@ -6,6 +6,9 @@
       <title>Portfolio Project</title>
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
       <link
@@ -23,7 +26,6 @@
     </head>
   </head>
   <body>
-
     <!-- nav bar -->
     <div class="navContaineer">
       <div class="nav">
@@ -50,13 +52,13 @@
           <a href="">
             <i class="fab fa-facebook-f"></i>
           </a>
-          <a href="">
+          <a href="https://github.com/neykhant" target="_blank">
             <i class="fab fa-github"></i>
           </a>
           <a href="">
             <i class="fas fa-envelope-open-text"></i>
           </a>
-          <a href="">Menu</a>
+          <a href=""><i class="fas fa-bars" style="font-size: 20px"></i></a>
         </div>
       </div>
     </div>
@@ -79,7 +81,7 @@
 
     <!-- section portfolio -->
     <section class="portfolio" id="portfolio">
-      <div class="container">
+      <div class="containerCard">
         <div class="title">
           <h1>PORTFOLIO</h1>
           <div class="rating">
@@ -89,17 +91,92 @@
           </div>
         </div>
         <div class="cardWrap">
-          <div class="card"></div>
-          <div class="card"></div>
-          <div class="card"></div>
-          <div class="card"></div>
-          <div class="card"></div>
-          <div class="card"></div>
+          <div class="card">
+            <a href="https://neykhant.github.io/weather-app/" target="_blank">
+              <img
+                src="./img/weather.png"
+                alt=""
+                 
+              />
+              <h5 class="h5" >
+                Weather App(React.js)
+              </h5>
+            </a>
+          </div>
+          <div class="card">
+            <a href="https://github.com/neykhant/HR-Management" target="_blank">
+              <img src="./img/manager.png" alt="" />
+            <h5 class="h5">HR Management(Laravel)</h5>
+            </a>
+          </div>
+          <div class="card">
+            <a href="https://react-application-covid19.herokuapp.com" target="_blank">
+              <img src="./img/manager.png" alt="" class="covid" />
+            <h5 class="h5">Covid-19 (React.js)</h5>
+            </a>
+          </div>
+          <div class="card">
+            <a href="https://github.com/neykhant/mini-wallet" target="_blank">
+              <img src="./img/wallet.png" alt="" />
+            <h5 class="h5">Wallet App(Laravel)</h5>
+            </a>
+          </div>
+          <div class="card">
+            <a href="https://quiz-react-deploy.herokuapp.com" target="_blank">
+              <img src="./img/quizz.png" alt="" />
+            <h5 class="h5">Quiz App(React.js)</h5>
+            </a>
+          </div>
+          <div class="card">
+            <a href="https://neykhant.github.io/my-youtube-clone" target="_blank">
+              <img src="./img/quizz.png" alt="" />
+            <h5 class="h5">Youtube Clone (React.js)</h5>
+            </a>
+          </div>
         </div>
       </div>
+
+      <!-- for mobile 768 -->
+      <div class="containerCard768">
+        <div class="title">
+          <h1>PORTFOLIO</h1>
+          <div class="rating">
+            <div class="line"></div>
+            <i class="fas fa-star fa-2x"></i>
+            <div class="line"></div>
+          </div>
+        </div>
+        <div class="cardWrap">
+          <div class="card">
+            <img src="./img/weather.png" alt="" />
+            <h5 class="h5">Weather App(React.js)</h5>
+          </div>
+          <div class="card">
+            <img src="./img/manager.png" alt="" />
+            <h5 class="h5">HR Management(PHP)</h5>
+          </div>
+          <div class="card">
+            <img src="./img/manager.png" alt="" class="covid" />
+            <h5 class="h5">Covid-19 (React.js)</h5>
+          </div>
+          <div class="card">
+            <img src="./img/wallet.png" alt="" />
+            <h5 class="h5">Wallet App(Laravel)</h5>
+          </div>
+          <div class="card">
+            <img src="./img/quizz.png" alt="" />
+            <h5 class="h5">HR Management</h5>
+          </div>
+          <div class="card">
+            <img src="./img/quizz.png" alt="" />
+            <h5 class="h5">Quiz App(React.js)</h5>
+          </div>
+        </div>
+      </div>
+      <!-- end for mobile 768  -->
     </section>
     <!-- end portfolio -->
-    
+
     <!-- about -->
     <section class="about" id="about">
       <div class="container">
@@ -135,7 +212,7 @@
     <!-- end about -->
 
     <!-- mobile view about -->
-   <section class="aboutt"  id="about">
+    <section class="aboutt" id="about">
       <div class="container">
         <div class="title">
           <h1>PORTFOLIO</h1>
@@ -215,10 +292,9 @@
         </div>
       </div>
       <div class="copyright">
-        <p>CopyRight &copy; Your website 2022</p>
+        <p>CopyRight &copy; NeyKhant 2022</p>
       </div>
     </footer>
     <!-- end footer -->
-    
   </body>
 </html>

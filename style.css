@@ -1,3 +1,9 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -54,7 +60,11 @@ html {
   display: none;
 }
 
-.aboutt{
+.aboutt {
+  display: none;
+}
+
+.containerCard768 {
   display: none;
 }
 /*------------------- for mobile view --------------------------------*/
@@ -67,7 +77,12 @@ html {
   .navMobile {
     display: block;
     width: 100%;
-    position: fixed;
+    /* position: fixed; */
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
     background: #2c3e50;
     padding: 10px 0;
     /* margin-bottom: 40px; */
@@ -109,6 +124,79 @@ html {
     color: #fff;
     font-size: 15px;
   }
+
+  /* -------------------for card---------------------------- */
+  .containerCard {
+    display: none;
+  }
+
+  .containerCard768{
+    display: block;
+  }
+
+  .portfolio {
+    padding: 40px 0;
+    /* background: green; */
+  }
+  
+  .portfolio .containerCard768 .title {
+    text-align: center;
+  }
+
+  
+.portfolio .containerCard768 .title .h1 {
+  font-size: 40px;
+  line-height: 1;
+  margin: 18px 0;
+  /* padding: 50px; */
+}
+
+.portfolio .containerCard768 .title .rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio .containerCard768 .title .rating .line {
+  /* width: 18%; */
+  width: 140px;
+  border: 2px solid #2c3e50;
+}
+
+.rating i {
+  margin: 0 10px;
+}
+
+.cardWrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+  padding: 20px 0 0 0;
+  /* height: 66vh; */
+  margin: 3px;
+}
+
+.cardWrap .card {
+  width: 100%;
+  max-width: 31%;
+  margin: 10px 0;
+  height: 180px;
+  /* background: url("./img/weather.png") no-repeat center/cover; */
+  background-color: #1abc9c;
+}
+
+.portfolio .containerCard768 .cardWrap .card img{
+  width: 60%;
+}
+
+.portfolio .containerCard768 .cardWrap .card h5{
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+  /*------------------------------ end for mobile card768-------------------- */
+
   /* --------for mobile view about ---------------- */
   .about {
     display: none;
@@ -197,6 +285,70 @@ html {
   .aboutt .container .btn i {
     margin-right: 10px;
   }
+
+
+}
+
+@media (max-width: 425px) {
+  .navContaineer {
+    display: none;
+  }
+
+  .navMobile {
+    display: block;
+    width: 100%;
+  }
+  /* ------for card------------- */
+  .portfolio .containerCard768 .cardWrap .card img{
+    width: 60%;
+  }
+
+  .portfolio .containerCard768 .cardWrap .card{
+    width: 100%;
+    max-width: 31%;
+    margin: 10px 0;
+    height: 120px;
+    background-color: #1abc9c;
+  }
+
+  .portfolio .containerCard768 .cardWrap .card h5{
+    font-size: 12px;
+    margin-top: 18px;
+  }
+
+}
+
+@media (max-width: 375px) {
+  .navContaineer {
+    display: none;
+  }
+
+  .navMobile {
+    display: block;
+    width: 100%;
+  }
+
+  .portfolio .containerCard768 .cardWrap .card h5{
+    font-size: 10px;
+    margin-top: 24px;
+  }
+}
+
+@media (max-width: 320px) {
+  .navContaineer {
+    display: none;
+  }
+
+  .navMobile {
+    display: block;
+    width: 100%;
+  }
+
+  .portfolio .containerCard768 .cardWrap .card h5{
+    font-size: 10px;
+    margin-top: 28px;
+  }
+
 }
 
 /* ----------------section main----------- */
@@ -342,24 +494,24 @@ html {
   /* background: green; */
 }
 
-.portfolio .container .title {
+.portfolio .containerCard .title {
   text-align: center;
 }
 
-.portfolio .container .title .h1 {
+.portfolio .containerCard .title .h1 {
   font-size: 40px;
   line-height: 1;
   margin: 18px 0;
   /* padding: 50px; */
 }
 
-.portfolio .container .title .rating {
+.portfolio .containerCard .title .rating {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.portfolio .container .title .rating .line {
+.portfolio .containerCard .title .rating .line {
   /* width: 18%; */
   width: 140px;
   border: 2px solid #2c3e50;
@@ -373,8 +525,10 @@ html {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  text-align: center;
   padding: 20px 0 0 0;
   /* height: 66vh; */
+  margin: 3px;
 }
 
 .cardWrap .card {
@@ -382,29 +536,48 @@ html {
   max-width: 31%;
   margin: 10px 0;
   height: 180px;
-  background: url("./img/cabin.png") no-repeat center/cover;
+  /* background: url("./img/weather.png") no-repeat center/cover; */
+  background-color: #1abc9c;
+  /* background-color: red; */
 }
 
+.cardWrap .card img {
+  width: 43%;
+}
+
+.cardWrap .card a{
+text-decoration: none;
+}
+
+.portfolio .containerCard .cardWrap .card h5{
+  font-size: 14px;
+  /* margin-top: 28px; */
+  color: #2c3e50;
+}
 .portfolio .container .cardWrap .card:nth-child(2) {
-  background: url("./img/cake.png") no-repeat center/cover;
+  /* background: url("./img/manager.png") no-repeat center/cover; */
+  /* background-color: #1abc9c; */
 }
 
 .portfolio .container .cardWrap .card:nth-child(3) {
-  background: url("./img/circus.png") no-repeat center/cover;
+  /* background: url("./img/wallet.png") no-repeat center/cover; */
+  /* background-color: #1abc9c; */
 }
 
 .portfolio .container .cardWrap .card:nth-child(4) {
-  background: url("./img/game.png") no-repeat center/cover;
+  /* background: url("./img/game.png") no-repeat center/cover;
+  background-color: #1abc9c; */
 }
 
 .portfolio .container .cardWrap .card:nth-child(5) {
-  background: url("./img/safe.png") no-repeat center/cover;
+  /* background: url("./img/quizz.png") no-repeat center/cover;
+  background-color: #1abc9c; */
 }
 
 .portfolio .container .cardWrap .card:nth-child(6) {
-  background: url("./img/submarine.png") no-repeat center/cover;
+  /* background: url("./img/covid.jpg") no-repeat center/cover;
+  background-color: #1abc9c; */
 }
-
 
 /* ----------------contact ------------------- */
 
@@ -508,7 +681,6 @@ html {
   background: darkcyan;
 }
 
-
 /* --------------------for footer ------------------------------- */
 
 footer {
@@ -520,7 +692,7 @@ footer {
 footer .container {
   display: flex;
   justify-content: space-between;
-  padding: 80px 0;
+  padding: 50px 0;
 }
 
 footer .container .card {
